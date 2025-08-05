@@ -60,3 +60,21 @@ func (h *Handler) HandleUpdate(update tgbot.Update, log *zap.SugaredLogger) {
 		}
 }
 
+/* func (h *Handler) ButtonHandler(update tgbot.Update, log *zap.SugaredLogger) {
+	replyKeyboard := tgbot.NewReplyKeyboard(
+		tgbot.NewKeyboardButtonRow(
+			tgbot.NewKeyboardButton("Хочу посмотреть погоду"),
+			tgbot.NewKeyboardButton("Хочу запланировать отправку погоды"),
+		),
+	)
+
+	switch update.Message.Text {
+	case "Хочу посмотреть погоду":
+		h.bot.Send(tgbot.NewMessage(update.Message.Chat.ID, "Жду город"))
+	case "Хочу запланировать отправку погоды":
+	}
+} 
+
+func (h *Handler) WeatherMsg(update tgbot.Update, log *zap.SugaredLogger) {
+	
+} */
